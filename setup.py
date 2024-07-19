@@ -3,7 +3,7 @@ import shutil
 
 def setup_dataset():
     source_path = r'D:\ML_DS_DEVOP\PlacedBasedIRS\dataset.txt'
-    destination_dir = os.path.join('PlacedBasedIRS', 'artifacts')
+    destination_dir = os.path.join('PlaceBasedIRS', 'artifacts')
     destination_path = os.path.join(destination_dir, 'dataset.txt')
 
     # Create the artifacts directory if it doesn't exist
@@ -14,5 +14,7 @@ def setup_dataset():
 
     print(f"dataset.txt has been copied to {destination_path}")
 
+
 if __name__ == "__main__":
     setup_dataset()
+

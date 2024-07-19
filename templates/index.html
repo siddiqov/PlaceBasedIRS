@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flask LLM App</title>
+    <title>PlaceBasedIRS Query</title>
 </head>
 <body>
-    <h1>Query the Dataset</h1>
-    <form action="/query" method="POST">
+    <h1>PlaceBasedIRS Query</h1>
+
+    <form action="/query" method="post">
         <label for="query">Enter your query:</label><br>
         <textarea id="query" name="query" rows="4" cols="50"></textarea><br><br>
+
+        <input type="radio" id="bert" name="model_choice" value="bert" checked>
+        <label for="bert">BERT Model</label><br>
+
+        <input type="radio" id="gpt" name="model_choice" value="gpt">
+        <label for="gpt">GPT Model</label><br><br>
+
         <input type="submit" value="Submit">
     </form>
 </body>
